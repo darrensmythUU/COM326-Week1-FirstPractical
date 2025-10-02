@@ -1,10 +1,8 @@
 ﻿//Task1();
 //Task2();
 //Task3();
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-Task4();
-//Task5();
+//Task4();
+Task5();
 
 void Task1()
 {
@@ -23,7 +21,7 @@ void Task2()
 {
     // Collects the users age, determines whether they are a child, teenager
     // or adult, then prints it to the console.
-    Console.WriteLine("Please enter your age.");
+    Console.WriteLine("Please enter your age to determine whether you are a child, teenager or adult.");
     int userAge = Convert.ToInt32(Console.ReadLine());
 
     if (userAge > 110)
@@ -52,7 +50,7 @@ void Task3()
 {
     // Collects a number from the user, determines if it is positive,
     // negative or 0 and then prints the result to the console.
-    Console.WriteLine("Please enter a number.");
+    Console.WriteLine("Please enter a number that you wish to determine whether it is positive, negative or zero.");
     int userNumber = Convert.ToInt32(Console.ReadLine());
 
     if (userNumber > 0)
@@ -73,7 +71,7 @@ void Task4()
 {
     // Collects a year from the user, determines if it is a
     // leap year, and then prints the result to the console.
-    Console.WriteLine("Please enter a year.");
+    Console.WriteLine("Please enter a year that you wish to know whether it is a leap year or not.");
     int userYear = Convert.ToInt32(Console.ReadLine());
 
     if ((userYear % 4 == 0 && userYear % 100 != 0) || userYear % 400 == 0)
@@ -88,5 +86,17 @@ void Task4()
 
 void Task5()
 {
+    // Collects a number from the user, determines if it is odd
+    // or even, and then prints the result to the console.
+    Console.WriteLine("Please enter a number that you wish to find out whether it is even or odd.");
+    int userNumber = Convert.ToInt32(Console.ReadLine());
 
+    if (userNumber % 2 == 0)
+    {
+        Console.WriteLine($"The user's number of {userNumber} is an even number.");
+    }
+    else
+    {
+        Console.WriteLine($"The user's number of {userNumber} is not an even number.");
+    }
 }
