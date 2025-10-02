@@ -1,7 +1,9 @@
 ﻿//Task1();
 //Task2();
-Task3();
-//Task4();
+//Task3();
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+Task4();
 //Task5();
 
 void Task1()
@@ -69,7 +71,19 @@ void Task3()
 
 void Task4()
 {
+    // Collects a year from the user, determines if it is a
+    // leap year, and then prints the result to the console.
+    Console.WriteLine("Please enter a year.");
+    int userYear = Convert.ToInt32(Console.ReadLine());
 
+    if ((userYear % 4 == 0 && userYear % 100 != 0) || userYear % 400 == 0)
+    {
+        Console.WriteLine($"The user's year of {userYear} is a leap year.");
+    }
+    else 
+    {
+        Console.WriteLine($"The user's year of {userYear} is not a leap year.");
+    }
 }
 
 void Task5()
