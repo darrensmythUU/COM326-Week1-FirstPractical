@@ -1,12 +1,13 @@
 ﻿//Task1();
-Task2();
-//Task3();
+//Task2();
+Task3();
 //Task4();
 //Task5();
 
 void Task1()
 {
-    // Collects the users name and the age they will be in 5 years. Then prints it
+    // Collects the users name and the age they will be in 5
+    // years. Then prints it.
     Console.WriteLine("Please enter your name.");
     string userName = Console.ReadLine();
 
@@ -18,7 +19,8 @@ void Task1()
 
 void Task2()
 {
-    // Collects the users age, determines whether they are a child, teenager or adult, then prints it to the console.
+    // Collects the users age, determines whether they are a child, teenager
+    // or adult, then prints it to the console.
     Console.WriteLine("Please enter your age.");
     int userAge = Convert.ToInt32(Console.ReadLine());
 
@@ -46,7 +48,23 @@ void Task2()
 
 void Task3()
 {
+    // Collects a number from the user, determines if it is positive,
+    // negative or 0 and then prints the result to the console.
+    Console.WriteLine("Please enter a number.");
+    int userNumber = Convert.ToInt32(Console.ReadLine());
 
+    if (userNumber > 0)
+    {
+        Console.WriteLine($"The user's number of {userNumber} is positive.");
+    }
+    else if (userNumber < 0)
+    {
+        Console.WriteLine($"The user's number of {userNumber} is negative.");
+    }
+    else
+    {
+        Console.WriteLine($"The user's number of {userNumber} is zero.");
+    }
 }
 
 void Task4()
